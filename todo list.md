@@ -47,3 +47,20 @@ for index, force in pairs(game.forces) do
     recipes["explosive-cannon-shell"].reload()
   end
 end
+
+## GUI
+
+=> Create GUI and button
+=> Toggle frame on button click
+=> Display informations on the gui
+=> look into to update the gui information:
+for _, s in pairs(game.surface) do
+    log(s.name)
+    local entities = s.find_entities_filtered{force="player", name="colonist"}
+    local count = #entities -- should work.
+    for entitie in entities do
+        -- do something...
+        log(entitie.name .. " found")
+    end
+end
+=> Add icons to the GUI instead of text labels
