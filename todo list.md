@@ -4,14 +4,14 @@ Get basic loop working:
 
 6 tierd colonist form rocket
         \/
-6 rest in rest-recipie 
+6 rest in rest-recipie
         \/
-3 work in workshop with; 50 processing units, 
+3 work in workshop with; 50 processing units,
     \/      \/
 100space  3 tierd colonists 416 seconds or 1day
             loop
 
-4 colonists in housing  1248 seconds or 3days 
+4 colonists in housing  1248 seconds or 3days
     \/
 reprocude-recipie
     \/
@@ -29,11 +29,11 @@ tech order, so they appear togther in the tree - NO idea how, low priority
 
 add chest, holding station for colonists only. - Waiting are in, no idea on exlusivity
 
-add wast as byproduct to reprocess. 
+add wast as byproduct to reprocess.
 
 Add a landing site, where colonits are rescived
 
-Migration snippets for future use 
+Migration snippets for future use
 
 for index, force in pairs(game.forces) do
   local technologies = force.technologies
@@ -50,17 +50,7 @@ end
 
 ## GUI
 
-=> Create GUI and button
-=> Toggle frame on button click
-=> Display informations on the gui
-=> look into to update the gui information:
-for _, s in pairs(game.surface) do
-    log(s.name)
-    local entities = s.find_entities_filtered{force="player", name="colonist"}
-    local count = #entities -- should work.
-    for entitie in entities do
-        -- do something...
-        log(entitie.name .. " found")
-    end
-end
+=> ~Create GUI and button~
+=> ~Toggle frame on button click~
+=> ~Display informations on the gui~
 => Add icons to the GUI instead of text labels
