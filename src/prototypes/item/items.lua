@@ -35,7 +35,7 @@ data:extend({
         stack_size = 20
       },
 
-      -- colonists and their activities 
+      -- colonists and their activities
       {
         type = "item",
         name = "colonist",
